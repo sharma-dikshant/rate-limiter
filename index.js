@@ -4,7 +4,7 @@
 function middleware(req, res, next) {
   const isAllowed = rateLimiter();
   if (isAllowed) return next();
-  return res.status(409).send("Too Many Request.");
+  return res.status(429).send("Too Many Request.");
 }
 
 /**
