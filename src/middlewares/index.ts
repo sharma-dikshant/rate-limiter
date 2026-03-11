@@ -2,7 +2,7 @@ import { RateLimiterFactory } from "../core/rateLimiterFactory.js"
 import { Request, Response, NextFunction } from "express"
 import { RateLimitOptions } from "../types/index.js"
 
-export function rateLimit(options: RateLimitOptions) {
+export function rateLimit(options?: RateLimitOptions) {
 
   const limiter = RateLimiterFactory.create(options)
 
