@@ -31,7 +31,8 @@
     "moduleDetection": "force"
   },
   "include": [
-    "*.ts"
+    "*.ts",
+    "src/**/*.ts"
   ],
   "exclude": [
     "node_modules",
